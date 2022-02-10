@@ -2,33 +2,32 @@
 /**
  * @return array
  */
-function getDishes()
+function getProjects()
 {
     return [
         [
             "id" => 1,
-            "name" => "Pizza",
-            "kitchen" => "Italian",
+            "title" => "De Kuip Videoclip",
+            "type" => "Video Production",
+            "client" => "Re-flax"
         ],
         [
             "id" => 2,
-            "name" => "Kale",
-            "kitchen" => "Dutch",
+            "title" => "Winterconcert",
+            "type" => "Video Production",
+            "client" => "Zinge"
         ],
         [
             "id" => 3,
-            "name" => "Lasagna",
-            "kitchen" => "Italian",
+            "title" => "Knowledgebase",
+            "type" => "Knowledgebase",
+            "client" => "Lucas"
         ],
         [
             "id" => 4,
-            "name" => "Kebab",
-            "kitchen" => "Turkish",
-        ],
-        [
-            "id" => 5,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "title" => "When Love Takes Over Show",
+            "type" => "Video Production",
+            "client" => "Re-flax"
         ]
     ];
 }
@@ -37,28 +36,28 @@ function getDishes()
  * @param $id
  * @return mixed
  */
-function getDishDetails($id)
+function getProjectDetails($id)
 {
     $tags = [
         1 => [
-            "recipe" => "Put it in the oven and go!",
-            "tags" => ['cheese', 'oven']
+            "date_start" => "2021-09-25",
+            "date_end" => "2021-09-25",
+            "description" => "Lorem ipsum dolor sit amet, consectetur adip"
         ],
         2 => [
-            "recipe" => "You can make this delicious Dutch meal by ...",
-            "tags" => ['unox', 'healthy', 'stamppot', 'boerenkool']
+            "date_start" => "2021-12-11",
+            "date_end" => "2021-12-12",
+            "description" => "Lorem ipsum dolor sit amet, consectetur adip"
         ],
         3 => [
-            "recipe" => "Very nice when your grandma prepares this meal",
-            "tags" => ['omnomnom']
+            "date_start" => "2021-01-01",
+            "date_end" => "current",
+            "description" => "Lorem ipsum dolor sit amet, consectetur adip"
         ],
         4 => [
-            "recipe" => "Everytime in the city after midnight",
-            "tags" => ['kapsalon', 'tasty', 'meat']
-        ],
-        5 => [
-            "recipe" => "Specialty when on holiday in Spain",
-            "tags" => ['fish']
+            "date_start" => "2021-11-11",
+            "date_end" => "2021-11-11",
+            "description" => "Lorem ipsum dolor sit amet, consectetur adip"
         ],
     ];
 
