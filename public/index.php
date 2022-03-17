@@ -11,24 +11,28 @@
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="/">/home</a></li>
-                    <li><a href="/cmgt">/cmgt</a></li>
-                    <li><a href="/">/dev</a></li>
-                    <li><a href="/">/video</a></li>
-                </ul>
+                <div>                
+                    <a class="logo" href="/"><img src="../../images/pf.jpg" height="40" width="40"></img>Lucas</a>
+                    <ul>
+                        <li><a href="/">/home</a></li>
+                        <li><a href="/cmgt">/cmgt</a></li>
+                        <li><a href="/">/dev</a></li>
+                        <li><a href="/">/video</a></li>
+                    </ul>
+                    <a class="theme" href="/"><img src="../../images/pf.jpg" height="40" width="40"></img></a>
+                </div>                
                 <div>
-                    <form>
-                        
+                    <form class="cli">
+                        <label>guest@lucas ~$</label>
+                        <input type="text"></input>
                     </form>
-                    guest@lucas~$
                 </div>
             </nav>
         </header>
-        <section>
+        <section class="profile">
             <img src="images/pf.jpg" height="200"></img>
-            <h1>Lucas van der Vegt</h1>
-            <div>
+            <h1 class="title">Lucas van der Vegt</h1>
+            <div class="skills">
                 <a>Webdeveloper</a>
                 <a>UX Designer</a>
                 <a>Gamification</a>
@@ -37,8 +41,8 @@
                 <a>Reflax</a> 
             </div>
         </section>
-        <section>
-            <div>
+        <section class="projects">
+            <a href="/projects/1">
                 <img src="images/reflax-dekuip.jpg" height="200"></img>
                 <div>
                     <h2>Project 1</h2>
@@ -46,7 +50,16 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
                     </p>
                 </div>
-            </div>
+            </a>
+            <a href="/projects/1">
+                <img src="images/reflax-dekuip.jpg" height="200"></img>
+                <div>
+                    <h2>Project 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
+                    </p>
+                </div>
+            </a>
         </section>
   </body>
 </html>
