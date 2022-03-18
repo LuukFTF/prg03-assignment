@@ -39,7 +39,7 @@
                     <a><img src="../../images/pf.jpg" height="40" width="40"></img>Gamification</a>
                     <a><img src="../../images/pf.jpg" height="40" width="40"></img>Video Production</a>
                     <a><img src="../../images/pf.jpg" height="40" width="40"></img>Social Media Management</a>
-                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>Reflax</a> 
+                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>Linux</a> 
                 </div>
             </section>
             <section class="projects">
