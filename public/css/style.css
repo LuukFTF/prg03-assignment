@@ -1,6 +1,86 @@
+:root {
+  --bg-color: #121212;
+  --surface-100: hsl(0, 0%, 11%);
+  --surface-150: hsl(0, 0%, 15%);
+  --surface-200: hsl(0, 0%, 20%);
+  --error-color: #F47189;
+  --warning-color: #FCD34D;
+  --succes-color: #6EE7B7;
+  --primary-300: #007599;
+  --primary-500: #1ac9ff;
+  --primary-700: #6ed7f7;
+  --white-on-1: #FFFFFFdd;
+  --white-on-2: #FFFFFF99;
+  --white-on-3: hsla(0, 0%, 100%, 0.376);
+  --black-on-1: #000000dd;
+  --black-on-2: hsla(0, 0%, 0%, 0.6);
+  --black-on-3: hsla(0, 0%, 0%, 0.376);
+  --whiteoverlay-4: hsla(0, 0%, 100%, 0.04);
+  --whiteoverlay-12: hsla(0, 0%, 100%, 0.12);
+  --onsurface-color: var(--white-on-1);
+  --onsurface-color2: var(--white-on-2);
+  --onsurface-color3: var(--white-on-3);
+  --onprimary-color: var(--black-on-1);
+  --onprimary-color2: var(--black-on-2);
+  --onprimary-color3: var(--black-on-3);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s;
+}
+
 body {
-  background: black;
-  color: white;
+  background: var(--bg-color);
+  color: var(--onsurface-color);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow: auto;
+}
+
+.webcontainer {
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav .links .logo {
+  font-family: monospace;
+  font-weight: 900;
+  color: var(--primary-500);
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+nav .links ul li a {
+  font-family: monospace;
+  font-weight: 900;
+  color: var(--primary-700);
+  text-decoration: none;
+}
+nav .cli {
+  font-family: monospace;
+  font-weight: 900;
+}
+
+.template {
+  /* color */
+  /* position */
+  /* display */
+  /* box model */
+  /* box attributes*/
+  /* text */
+  /* other */
+  /* animation */
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,9 +11,9 @@
     <body>
         <header>
             <nav>
-                <div>                
+                <div class="links flex">                
                     <a class="logo" href="/"><img src="../../images/pf.jpg" height="40" width="40"></img>Lucas</a>
-                    <ul>
+                    <ul class="flex">
                         <li><a href="/">/home</a></li>
                         <li><a href="/cmgt">/cmgt</a></li>
                         <li><a href="/">/dev</a></li>
@@ -21,45 +21,47 @@
                     </ul>
                     <a class="theme" href="/"><img src="../../images/pf.jpg" height="40" width="40"></img></a>
                 </div>                
-                <div>
-                    <form class="cli">
-                        <label>guest@lucas ~$</label>
-                        <input type="text"></input>
-                    </form>
-                </div>
+                <form class="cli">
+                    <label>guest@lucas ~$</label>
+                    <input type="text"></input>
+                </form>
             </nav>
         </header>
-        <section class="profile">
-            <img src="images/pf.jpg" height="200"></img>
-            <h1 class="title">Lucas van der Vegt</h1>
-            <div class="skills">
-                <a>Webdeveloper</a>
-                <a>UX Designer</a>
-                <a>Gamification</a>
-                <a>Video Production</a>
-                <a>Social Media Management</a>
-                <a>Reflax</a> 
-            </div>
-        </section>
-        <section class="projects">
-            <a href="/projects/1">
-                <img src="images/reflax-dekuip.jpg" height="200"></img>
-                <div>
-                    <h2>Project 1</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
-                    </p>
+        <div class="webcontainer">
+            <section class="profile">
+                <div class="top flex">
+                    <img src="images/pf.jpg" height="200"></img>
+                    <h1 class="title">Lucas van der Vegt</h1>
                 </div>
-            </a>
-            <a href="/projects/1">
-                <img src="images/reflax-dekuip.jpg" height="200"></img>
-                <div>
-                    <h2>Project 2</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
-                    </p>
+                <div class="skills flex">
+                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>Webdeveloper</a>
+                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>UX Designer</a>
+                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>Gamification</a>
+                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>Video Production</a>
+                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>Social Media Management</a>
+                    <a><img src="../../images/pf.jpg" height="40" width="40"></img>Reflax</a> 
                 </div>
-            </a>
-        </section>
+            </section>
+            <section class="projects">
+                <a href="/projects/1">
+                    <img src="images/reflax-dekuip.jpg" height="200"></img>
+                    <div>
+                        <h2>Project 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
+                        </p>
+                    </div>
+                </a>
+                <a href="/projects/1">
+                    <img src="images/reflax-dekuip.jpg" height="200"></img>
+                    <div>
+                        <h2>Project 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
+                        </p>
+                    </div>
+                </a>
+            </section>
+        </div>
   </body>
 </html>

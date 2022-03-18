@@ -29,21 +29,23 @@
                 </div>
             </nav>
         </header>
-        <section class="main">
-            <img src="../../images/reflax-dekuip.jpg" height="200" width="800"></img>
-            <div>
-                <h1># Project 1</h1>
-                <div>
-                    <p>Camera Operator</p>
-                    <p>Re-flax | 2021 | Rotterdam, De Kuip </p>
-                    <p>#videoproduction #musicvideo</p>
+        <div class="webcontainer">
+            <section class="project">
+                <img src="../../images/reflax-dekuip.jpg" height="200" width="800"></img>
+                <div class="header">
+                    <h1># Project 1</h1>
+                    <div class="tags">
+                        <p>Camera Operator</p>
+                        <p>Re-flax | 2021 | Rotterdam, De Kuip </p>
+                        <p>#videoproduction #musicvideo</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
-                <img src="../../images/reflax-dekuip.jpg" height="200"></img>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
-            </div>
-        </section>
+                <div class="body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
+                    <img src="../../images/reflax-dekuip.jpg" height="200"></img>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
+                </div>
+            </section>
+        </div>
   </body>
 </html>
