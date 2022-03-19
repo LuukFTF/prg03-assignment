@@ -28,7 +28,6 @@
   --onprimary-color3: var(--black-on-3);
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-
 * {
   box-sizing: border-box;
   padding: 0;

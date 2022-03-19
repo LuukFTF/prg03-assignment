@@ -41,6 +41,34 @@
 
 
     font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    h1 {
+
+    }
+    
+    h2 {
+        
+    }
+    
+    h3 {
+
+    }
+
+    h4 {
+
+    }
+
+    h5 {
+
+    }
+
+    p {
+
+    }
+
+    a {
+        
+    }
 }
 
 * {
@@ -79,6 +107,8 @@ body {
 }
 
 
+
+
 nav {
     .links {
         .logo {
@@ -99,6 +129,10 @@ nav {
                 }
             }
         }
+
+        .theme {
+
+        }
     }
 
     .cli {
@@ -107,8 +141,37 @@ nav {
     }
 }
 
+.profile {
+    .top {
+        .title {
+
+        }
+        .skills {
+
+        }
+    }
+}
 
 
+.projects {
+    .project {
+        .textbody {
+            
+        }
+    }
+}
+
+
+.project {
+    .textheader {
+        .tags {
+
+        }
+    }
+    .textbody {
+
+    }
+}
 
 .template {
     /* color */

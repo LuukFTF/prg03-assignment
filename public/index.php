@@ -43,18 +43,18 @@
                 </div>
             </section>
             <section class="projects">
-                <a href="/projects/1">
+                <a class="project" href="/projects/1">
                     <img src="images/reflax-dekuip.jpg" height="200"></img>
-                    <div>
+                    <div class="textbody">
                         <h2>Project 1</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
                         </p>
                     </div>
                 </a>
-                <a href="/projects/1">
+                <a class="project" href="/projects/1">
                     <img src="images/reflax-dekuip.jpg" height="200"></img>
-                    <div>
+                    <div class="textbody">
                         <h2>Project 2</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.

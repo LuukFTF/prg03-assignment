@@ -32,7 +32,7 @@
         <div class="webcontainer">
             <section class="project">
                 <img src="../../images/reflax-dekuip.jpg" height="200" width="800"></img>
-                <div class="header">
+                <div class="textheader">
                     <h1># Project 1</h1>
                     <div class="tags">
                         <p>Camera Operator</p>
@@ -40,7 +40,7 @@
                         <p>#videoproduction #musicvideo</p>
                     </div>
                 </div>
-                <div class="body">
+                <div class="textbody">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
                     <img src="../../images/reflax-dekuip.jpg" height="200"></img>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
