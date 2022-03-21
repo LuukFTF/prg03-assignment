@@ -69,6 +69,8 @@
     a {
         
     }
+
+
 }
 
 * {
@@ -77,6 +79,8 @@
     margin: 0;
 
     transition: all 0.2s;
+
+
 }
 
 body { 
@@ -84,7 +88,9 @@ body {
     
     color: var(--onsurface-color);
 
-
+    svg {
+        fill: var(--white-on-1);
+    }
 }
 
 .flex {
@@ -121,6 +127,8 @@ nav {
 
         ul {
             li {
+                list-style-type: none;
+                
                 a {
                     font-family: monospace;
                     font-weight: 900;

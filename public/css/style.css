@@ -39,6 +39,9 @@ body {
   background: var(--bg-color);
   color: var(--onsurface-color);
 }
+body svg {
+  fill: var(--white-on-1);
+}
 
 .flex {
   display: flex;
@@ -62,6 +65,9 @@ nav .links .logo {
   color: var(--primary-500);
   text-decoration: none;
   font-size: 2.5rem;
+}
+nav .links ul li {
+  list-style-type: none;
 }
 nav .links ul li a {
   font-family: monospace;
