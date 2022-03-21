@@ -33,15 +33,18 @@
                 <div class="textheader">
                     <h1># Project 1</h1>
                     <div class="tags">
-                        <p>Camera Operator</p>
-                        <p>Re-flax | 2021 | Rotterdam, De Kuip </p>
-                        <p>#videoproduction #musicvideo</p>
+                        <p class="small">Camera Operator</p>
+                        <p class="small">Re-flax | 2021 | Rotterdam, De Kuip </p>
+                        <p class="small">#videoproduction #musicvideo</p>
                     </div>
                 </div>
                 <div class="textbody">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
                     <img src="../../images/reflax-dekuip2.jpg" height="200"></img>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.</p>
+                    <h2>1.1 Subtitle</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi <i>est porro voluptas</i> minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi <b>neque pariatur?</b> Sint quae dicta voluptatum.</p>
+                    <h3>An idea</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi</p>
                 </div>
             </article>
         </div>

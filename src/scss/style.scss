@@ -14,8 +14,13 @@
     --primary-700:      #6ed7f7;
 
     --secondary-300:      #0d9900;
-    --secondary-500:      #2dff1a
+    --secondary-500:      #2dff1a;
     --secondary-700:      #79f76e;
+
+
+    // --primary-300:      #0d9900;
+    // --primary-500:      #2dff1a;
+    // --primary-700:      #79f76e;
 
 
     --white-on-1:        #FFFFFFdd;
@@ -42,34 +47,6 @@
 
     font-family: Roboto, Arial, Helvetica, sans-serif;
 
-    h1 {
-
-    }
-    
-    h2 {
-        
-    }
-    
-    h3 {
-
-    }
-
-    h4 {
-
-    }
-
-    h5 {
-
-    }
-
-    p {
-
-    }
-
-    a {
-        
-    }
-
 
 }
 
@@ -91,11 +68,79 @@ body {
     svg {
         fill: var(--white-on-1);
     }
+
+    h1 {
+        font-size: 2.986rem;
+    }
+    
+    h2 {
+        font-size: 2.488rem;
+    }
+    
+    h3 {
+        font-size: 2.074rem;
+    }
+
+    h4 {
+        font-size: 1.728rem;
+    }
+
+    h5 {
+        font-size: 1.44rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    p.small {
+        font-size: 0.833rem;
+    }
+
+    a {
+        
+        &:link {
+        text-decoration: none;
+        color: var(--primary-700);
+        }
+        
+        &:visited {
+        text-decoration: none;
+        color: var(--primary-700);
+        }
+          
+        &:hover {
+            text-decoration: underline;
+            color: var(--primary-500);
+        }
+          
+        &:active {
+            text-decoration: underline;
+            color: var(--primary-500);
+        }  
+    }
 }
 
 .flex {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+
+    overflow: auto;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -116,13 +161,18 @@ body {
 
 
 nav {
+    margin: 2rem;
+    padding: 1rem;
+
     .links {
         .logo {
+            padding: 0.5rem;
+
             font-family: monospace;
             font-weight: 900;
-            color: var(--primary-500);
+            color: var(--primary-700);
             text-decoration: none;
-            font-size: 2.5rem;
+            font-size: 2.074rem;
         }
 
         ul {
@@ -130,10 +180,18 @@ nav {
                 list-style-type: none;
                 
                 a {
+                    margin: 1rem;
+
+                    font-size: 2.074rem;
                     font-family: monospace;
                     font-weight: 900;
                     color: var(--primary-700);
                     text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: var(--primary-500);
+                    }
                 }
             }
         }
@@ -144,27 +202,98 @@ nav {
     }
 
     .cli {
+        margin-top: 1rem;
+
         font-family: monospace;
         font-weight: 900;
+
+        font-size: 1.44rem;
+
+        color: var(--primary-700);
     }
 }
 
 .profile {
+    margin: 1rem;
+    padding: 1rem;
+
+    background: var(--surface-100);
+    border-radius: 10px;
+
     .top {
-        .title {
+        margin: 1rem;
 
+        img {
+            margin-right: 1rem;
+
+            border-radius: 5px;
         }
-        .skills {
 
+        .title {
+            margin-left: 1rem;
+            padding: 1rem;
+
+            font-family: monospace;
+            font-weight: 900;
+            color: var(--primary-500);
+        }
+    }
+
+    .skills {
+        margin: 1rem;
+
+        a {
+            margin: 1rem 1rem 0;
+
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: center;
+            align-items: center;
+
+            font-family: monospace;
+
+            svg:hover, svg:active {
+                fill: var(--primary-500);
+            }
         }
     }
 }
 
 
 .projects {
+    margin: 1rem;
+    
+    margin-top: 2rem;
+
     .project {
+        margin: 1rem;
+        padding: 1rem;
+
+        img {
+            height: 200px;
+            width: 300px;
+
+            object-fit: cover;
+
+            border-radius: 10px 0 0 10px;
+            padding-right: 1rem;
+        }
+
         .textbody {
+            &:hover {
+                text-decoration: none;
+                color: var(--primary-500);
+            }
             
+            &:active {
+                text-decoration: none;
+                color: var(--primary-500);
+            }  
+
+            
+
+            padding: 1rem;
         }
     }
 }
@@ -177,7 +306,7 @@ nav {
         }
     }
     .textbody {
-
+        color: var(--white-on-1);
     }
 }
 
