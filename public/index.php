@@ -59,15 +59,6 @@
                         </p>
                     </div>
                 </a></div>
-                <div class="project"><a class="flex" href="/projects/1">
-                    <img src="images/project-example.png"></img>
-                    <div class="textbody">
-                        <h2>Project 2</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
-                        </p>
-                    </div>
-                </a></div>
             </section>
         </div>
   </body>
