@@ -111,6 +111,24 @@ body a:active {
   margin: auto;
 }
 
+.sidebar {
+  height: auto;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: var(--surface-200);
+  overflow-x: hidden;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.sidebar p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 nav {
   margin: 2rem;
   padding: 1rem;
