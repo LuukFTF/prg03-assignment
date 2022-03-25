@@ -10,6 +10,7 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
         let project_a = document.createElement('a')
         project_a.className = "flex"
         // project_a.href = "/projects/"+id
+        project.appendChild(project_a)
         project_a.addEventListener("click", function(){ loadSidepanel("De Kuip Videoclip", 
         "Camera Operator", 
         "Re-flax", 
@@ -17,7 +18,6 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
         "2021-09-25", 
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.", 
         "reflax-dekuip.jpg")});
-        project.appendChild(project_a)
 
             let img = document.createElement('img')
             img.src = "images/"+img_url
@@ -38,6 +38,14 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
                 let p2 = document.createElement('p')
                 p2.innerHTML = p2_string
                 textbody.appendChild(p2)
+
+            let save_btn = document.createElement('button')
+            save_btn.id = "save_btn"+id
+            save_btn_string = loadProjectFav(id) == true ? 'Save' : 'Unsave';
+            save_btn.innerHTML = save_btn_string
+            project_a.appendChild(save_btn)
+            save_btn.addEventListener("click", function(){ addProjectFav(id)});
+        
 }
 
 loadProject(1, "De Kuip Videoclip",
@@ -107,4 +115,29 @@ function loadSidepanel(title, type, client, location, date_start, discription, i
 // "2021-09-25", 
 // "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.", 
 // "reflax-dekuip.jpg")
+
+function addProjectFav(id) {
+    localStorage.setItem(`projectsaved${id}`, 1);
+    console.log(`projectsaved${id}`, 1)
+
+    let save_btn = document.getElementById(`save_btn${id}`)
+
+    save_btn.addEventListener("click", function(){ removeProjectFav(id)});
+    save_btn.innerHTML = "Unsave"
+}
+
+function loadProjectFav(id) {
+    return localStorage.getItem(`projectsaved${id}`);
+}
+
+function removeProjectFav(id) {
+    localStorage.setItem(`projectsaved${id}`, 0);
+    console.log(`projectsaved${id}`, 0)
+
+    let save_btn = document.getElementById(`save_btn${id}`)
+
+    save_btn.addEventListener("click", function(){ addProjectFav(id)});
+    save_btn.innerHTML = "Save"
+}
+
 

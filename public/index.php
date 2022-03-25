@@ -50,16 +50,16 @@
                 </div>
             </section>
             <section class="projects">
-                <!-- <div class="project"><a class="flex" href="/projects/1">
+                <div class="project"><a class="flex" href="/projects/1">
                     <img src="images/reflax-dekuip.jpg"></img>
                     <div class="textbody">
                         <h2>Project 1</h2>
                         <p>Info1</p>
                         <p>Info2</p>
                     </div>
-                </a></div> -->
+                </a></div>
             </section>
-            <!-- <section class="sidebar">
+            <section class="sidebar">
                 <div class="textheader">
                     <h2># Project 1</h2>
                     <div class="tags">
@@ -72,7 +72,8 @@
                     <img src="../../images/reflax-dekuip2.jpg" height="200"></img>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi <i>est porro voluptas</i> minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi <b>neque pariatur?</b> Sint quae dicta voluptatum.</p>
                 </div>
-            </section> -->
+                <button id="button1">Save</button>
+            </section>
         </div>
   </body>
   <script src="js/index.js"></script>
