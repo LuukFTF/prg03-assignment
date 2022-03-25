@@ -59,13 +59,12 @@
                     </div>
                 </a></div> -->
             </section>
-            <section class="sidebar">
+            <!-- <section class="sidebar">
                 <div class="textheader">
                     <h2># Project 1</h2>
                     <div class="tags">
                             <p class="small">Camera Operator</p>
                             <p class="small">Re-flax | 2021 | Rotterdam, De Kuip </p>
-                            <p class="small">#videoproduction #musicvideo</p>
                     </div>
                 </div>
                 <div class="textbody">
@@ -73,7 +72,7 @@
                     <img src="../../images/reflax-dekuip2.jpg" height="200"></img>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi <i>est porro voluptas</i> minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi <b>neque pariatur?</b> Sint quae dicta voluptatum.</p>
                 </div>
-            </section>
+            </section> -->
         </div>
   </body>
   <script src="js/index.js"></script>

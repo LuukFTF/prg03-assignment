@@ -7,35 +7,37 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
     project.className = "project"
     projects.appendChild(project)
 
-    let project_a = document.createElement('a')
-    project_a.className = "flex"
-    project_a.href = "/projects/"+id
-    project.appendChild(project_a)
+        let project_a = document.createElement('a')
+        project_a.className = "flex"
+        // project_a.href = "/projects/"+id
+        project_a.addEventListener("click", function(){ loadSidepanel("De Kuip Videoclip", 
+        "Camera Operator", 
+        "Re-flax", 
+        "Rotterdam, De Kuip", 
+        "2021-09-25", 
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.", 
+        "reflax-dekuip.jpg")});
+        project.appendChild(project_a)
 
-    let img = document.createElement('img')
-    img.src = "images/"+img_url
-    project_a.appendChild(img)
+            let img = document.createElement('img')
+            img.src = "images/"+img_url
+            project_a.appendChild(img)
 
-    let textbody = document.createElement('div')
-    textbody.className = "textbody"
-    project_a.appendChild(textbody)
+            let textbody = document.createElement('div')
+            textbody.className = "textbody"
+            project_a.appendChild(textbody)
 
-    let h2 = document.createElement('h2')
-    h2.innerHTML = h2_string 
-    textbody.appendChild(h2)
+                let h2 = document.createElement('h2')
+                h2.innerHTML = h2_string 
+                textbody.appendChild(h2)
 
-    let p1 = document.createElement('p')
-    p1.innerHTML = p1_string
-    textbody.appendChild(p1)
+                let p1 = document.createElement('p')
+                p1.innerHTML = p1_string
+                textbody.appendChild(p1)
 
-    let p2 = document.createElement('p')
-    p2.innerHTML = p2_string
-    textbody.appendChild(p2)
-
-    // console.log(webcontainer)
-    // console.log(projects)
-    // console.log(project)
-
+                let p2 = document.createElement('p')
+                p2.innerHTML = p2_string
+                textbody.appendChild(p2)
 }
 
 loadProject(1, "De Kuip Videoclip",
@@ -51,4 +53,58 @@ loadProject(3, "Winterconcert",
     "Live Video Production",
     "reflax-dekuip.jpg");
 
+function loadSidepanel(title, type, client, location, date_start, discription, img_url) {
+    let webcontainer = document.getElementsByClassName("webcontainer")[0];
+
+    let sidebar = document.createElement('section')
+    sidebar.className = "sidebar"
+    webcontainer.appendChild(sidebar)
+
+        let textheader = document.createElement('div')
+        textheader.className = "textheader"
+        sidebar.appendChild(textheader)
+
+            let h2 = document.createElement('h2')
+            h2.className = "h2"
+            h2.innerHTML = title
+            textheader.appendChild(h2)
+
+            let tags = document.createElement('h2')
+            tags.className = "tags"
+            textheader.appendChild(tags)
+
+                let small1 = document.createElement('p')
+                small1.className = "small"
+                small1.innerHTML = type
+                tags.appendChild(small1)
+
+                let small2 = document.createElement('p')
+                small2.className = "small"
+                small2.innerHTML = client+" | "+date_start+" | "+location
+                tags.appendChild(small2)
+
+        let textbody = document.createElement('div')
+        textbody.className = "textbody"
+        sidebar.appendChild(textbody)
+
+            let p1 = document.createElement('p')
+            p1.innerHTML = discription
+            textbody.appendChild(p1)
+
+            let img = document.createElement('img')
+            img.src = "images/"+img_url
+            textbody.appendChild(img)
+
+            let p2 = document.createElement('p')
+            p2.innerHTML = discription
+            textbody.appendChild(p2)
+}
+
+// loadSidepanel("De Kuip Videoclip", 
+// "Camera Operator", 
+// "Re-flax", 
+// "Rotterdam, De Kuip", 
+// "2021-09-25", 
+// "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias excepturi est porro voluptas minima et officia consequuntur dicta, atque vitae voluptate, assumenda temporibus eligendi neque pariatur? Sint quae dicta voluptatum.", 
+// "reflax-dekuip.jpg")
 
