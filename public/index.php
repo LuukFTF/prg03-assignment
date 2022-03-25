@@ -50,15 +50,14 @@
                 </div>
             </section>
             <section class="projects">
-                <div class="project"><a class="flex" href="/projects/1">
+                <!-- <div class="project"><a class="flex" href="/projects/1">
                     <img src="images/reflax-dekuip.jpg"></img>
                     <div class="textbody">
                         <h2>Project 1</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore voluptate ullam molestias recusandae placeat nisi rerum ipsa. Consectetur, dolor.
-                        </p>
+                        <p>Info1</p>
+                        <p>Info2</p>
                     </div>
-                </a></div>
+                </a></div> -->
             </section>
         </div>
   </body>
