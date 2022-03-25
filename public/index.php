@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Lucas's Portfolio</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/index.js"></script>
     </head>
     <body>
         <header>
@@ -72,4 +71,5 @@
             </section>
         </div>
   </body>
+  <script src="js/index.js"></script>
 </html>
