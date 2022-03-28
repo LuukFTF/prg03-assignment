@@ -229,6 +229,24 @@ nav .cli {
   text-decoration: none;
   color: var(--primary-500);
 }
+.projects .project button {
+  padding: 0.5em 1em;
+  margin-top: 1rem;
+  background-color: var(--primary-500);
+  color: var(--white-on-1);
+  font-weight: 900;
+}
+.projects .project.saved {
+  background-color: var(--primary-300);
+}
+.projects .project.saved:hover {
+  text-decoration: underline;
+  color: var(--white-on-1);
+}
+.projects .project.saved:active {
+  text-decoration: underline;
+  color: var(--white-on-1);
+}
 
 .project .textbody {
   color: var(--white-on-1);

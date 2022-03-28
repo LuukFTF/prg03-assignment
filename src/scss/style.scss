@@ -58,7 +58,7 @@
     transition: all 0.2s;
 
 
-}
+}   
 
 body { 
     background: var(--bg-color);
@@ -314,9 +314,29 @@ nav {
                 color: var(--primary-500);
             }  
 
-            
-
             padding: 1rem;
+        }
+
+        button { 
+            padding: .5em 1em;
+            margin-top: 1rem;
+            background-color: var(--primary-500);
+            color: var(--white-on-1);
+            font-weight: 900;
+        }
+
+        &.saved {
+            background-color: var(--primary-300);
+
+            &:hover {
+                text-decoration: underline;
+                color: var(--white-on-1);
+            }
+              
+            &:active {
+                text-decoration: underline;
+                color: var(--white-on-1);
+            }  
         }
     }
 }

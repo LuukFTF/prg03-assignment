@@ -4,7 +4,8 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
     // let projects = document.getElementById("projects");
 
     let project = document.createElement('div')
-    project.className = "project"
+    project.id = "project"+id;
+    project.className = loadProjectFav(id) == true ? 'project' : 'project saved';
     projects.appendChild(project)
 
         let project_a = document.createElement('a')
@@ -39,13 +40,13 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
                 p2.innerHTML = p2_string
                 textbody.appendChild(p2)
 
-            let save_btn = document.createElement('button')
-            save_btn.id = "save_btn"+id
-            save_btn_string = loadProjectFav(id) == true ? 'Save' : 'Unsave';
-            save_btn.innerHTML = save_btn_string
-            project_a.appendChild(save_btn)
-            save_btn.addEventListener("click", function(){ addProjectFav(id)});
-        
+                let save_btn = document.createElement('button')
+                save_btn.id = "save_btn"+id
+                save_btn_string = loadProjectFav(id) == true ? 'Save' : 'Unsave';
+                save_btn.innerHTML = save_btn_string
+                textbody.appendChild(save_btn)
+                save_btn.addEventListener("click", function(){ addProjectFav(id)});
+            
 }
 
 loadProject(1, "De Kuip Videoclip",
@@ -124,6 +125,9 @@ function addProjectFav(id) {
 
     save_btn.addEventListener("click", function(){ removeProjectFav(id)});
     save_btn.innerHTML = "Unsave"
+
+    let project = document.getElementById(`project${id}`)
+    project.className = 'project saved';
 }
 
 function loadProjectFav(id) {
@@ -138,6 +142,9 @@ function removeProjectFav(id) {
 
     save_btn.addEventListener("click", function(){ addProjectFav(id)});
     save_btn.innerHTML = "Save"
+
+    let project = document.getElementById(`project${id}`)
+    project.className = 'project';
 }
 
 
