@@ -48,10 +48,8 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
                 textbody.appendChild(save_btn)
                 if(loadProjectFav(id) == 0) {
                     save_btn.addEventListener("click", function(){ addProjectFav(id)});
-                    console.log("eventlistener addFav")
                 } else {
                     save_btn.addEventListener("click", function(){ removeProjectFav(id)});
-                    console.log("eventlistener removeFav")
                 }
 }
 
@@ -135,26 +133,20 @@ function addProjectFav(id) {
     
     // updateSave_btn(id)
 
-    console.log("updateSave_btn hardcoded")
-
     let textbody = document.getElementById(`textbody${id}`)
 
     let save_btn = document.getElementById(`save_btn${id}`)
-    console.log(save_btn)
 
     save_btn.remove();
     let save_btn2 = document.createElement('button')
-    console.log(save_btn2)
      
     save_btn2.id = "save_btn"+id
     save_btn2.innerHTML = 'Unsave'
     textbody.appendChild(save_btn2)
     save_btn2.addEventListener("click", function(){ removeProjectFav(id)});
-    console.log("eventlistener removeFav")
 }
 
 function loadProjectFav(id) {
-    console.log(localStorage.getItem(`projectsaved${id}`));
     return localStorage.getItem(`projectsaved${id}`);
 }
 
@@ -167,23 +159,18 @@ function removeProjectFav(id) {
 
     // updateSave_btn(id)
 
-    console.log("updateSave_btn hardcoded")
-
     let textbody = document.getElementById(`textbody${id}`)
 
     let save_btn = document.getElementById(`save_btn${id}`)
-    console.log(save_btn)
 
 
     save_btn.remove();
     let save_btn2 = document.createElement('button')
-    console.log(save_btn2)
 
     save_btn2.id = "save_btn"+id
     save_btn2.innerHTML = 'Save'
     textbody.appendChild(save_btn2)
     save_btn2.addEventListener("click", function(){ addProjectFav(id)});
-    console.log("eventlistener addFav")
 }
 
 
