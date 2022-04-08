@@ -70,7 +70,7 @@ function getProjectDetails($id)
             "date_end" => "2021-09-25",
             "description" => "Lorem ipsum dolor sit amet, consectetur adip"
 
-        ]
+        ],
         3 => [
             "title" => "Winterconcert",
             "type" => "Live Video Production",

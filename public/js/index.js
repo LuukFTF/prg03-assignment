@@ -5,7 +5,7 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
 
     let project = document.createElement('div')
     project.id = "project"+id;
-    project.className = loadProjectFav(id) == true ? 'project' : 'project saved';
+    project.className = loadProjectFav(id) == 0 ? 'project' : 'project saved';
     projects.appendChild(project)
 
         let project_a = document.createElement('a')
@@ -26,6 +26,7 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
 
             let textbody = document.createElement('div')
             textbody.className = "textbody"
+            textbody.id = "textbody"+id
             project_a.appendChild(textbody)
 
                 let h2 = document.createElement('h2')
@@ -42,12 +43,20 @@ function loadProject(id, h2_string, p1_string, p2_string, img_url) {
 
                 let save_btn = document.createElement('button')
                 save_btn.id = "save_btn"+id
-                save_btn_string = loadProjectFav(id) == true ? 'Save' : 'Unsave';
+                save_btn_string = loadProjectFav(id) == 0 ? 'Save' : 'Unsave';
                 save_btn.innerHTML = save_btn_string
                 textbody.appendChild(save_btn)
-                save_btn.addEventListener("click", function(){ addProjectFav(id)});
-            
+                if(loadProjectFav(id) == 0) {
+                    save_btn.addEventListener("click", function(){ addProjectFav(id)});
+                    console.log("eventlistener addFav")
+                } else {
+                    save_btn.addEventListener("click", function(){ removeProjectFav(id)});
+                    console.log("eventlistener removeFav")
+                }
 }
+
+
+
 
 loadProject(1, "De Kuip Videoclip",
     "Camera Operator",
@@ -121,16 +130,31 @@ function addProjectFav(id) {
     localStorage.setItem(`projectsaved${id}`, 1);
     console.log(`projectsaved${id}`, 1)
 
-    let save_btn = document.getElementById(`save_btn${id}`)
-
-    save_btn.addEventListener("click", function(){ removeProjectFav(id)});
-    save_btn.innerHTML = "Unsave"
-
     let project = document.getElementById(`project${id}`)
     project.className = 'project saved';
+    
+    // updateSave_btn(id)
+
+    console.log("updateSave_btn hardcoded")
+
+    let textbody = document.getElementById(`textbody${id}`)
+
+    let save_btn = document.getElementById(`save_btn${id}`)
+    console.log(save_btn)
+
+    save_btn.remove();
+    let save_btn2 = document.createElement('button')
+    console.log(save_btn2)
+     
+    save_btn2.id = "save_btn"+id
+    save_btn2.innerHTML = 'Unsave'
+    textbody.appendChild(save_btn2)
+    save_btn2.addEventListener("click", function(){ removeProjectFav(id)});
+    console.log("eventlistener removeFav")
 }
 
 function loadProjectFav(id) {
+    console.log(localStorage.getItem(`projectsaved${id}`));
     return localStorage.getItem(`projectsaved${id}`);
 }
 
@@ -138,13 +162,44 @@ function removeProjectFav(id) {
     localStorage.setItem(`projectsaved${id}`, 0);
     console.log(`projectsaved${id}`, 0)
 
-    let save_btn = document.getElementById(`save_btn${id}`)
-
-    save_btn.addEventListener("click", function(){ addProjectFav(id)});
-    save_btn.innerHTML = "Save"
-
     let project = document.getElementById(`project${id}`)
     project.className = 'project';
+
+    // updateSave_btn(id)
+
+    console.log("updateSave_btn hardcoded")
+
+    let textbody = document.getElementById(`textbody${id}`)
+
+    let save_btn = document.getElementById(`save_btn${id}`)
+    console.log(save_btn)
+
+
+    save_btn.remove();
+    let save_btn2 = document.createElement('button')
+    console.log(save_btn2)
+
+    save_btn2.id = "save_btn"+id
+    save_btn2.innerHTML = 'Save'
+    textbody.appendChild(save_btn2)
+    save_btn2.addEventListener("click", function(){ addProjectFav(id)});
+    console.log("eventlistener addFav")
 }
 
 
+
+// function updateSave_btn(id){
+//     console.log("updateSave_btn")
+//     let save_btn = document.getElementById(`save_btn${id}`)
+//     save_btn.replaceWith(save_btn.cloneNode(true));
+//     save_btn.id = "save_btn"+id
+//     save_btn_string = loadProjectFav(id) == 0 ? 'Save' : 'Unsave';
+//     save_btn.innerHTML = save_btn_string
+//     if(loadProjectFav(id) == 0) {
+//         save_btn.addEventListener("click", function(){ addProjectFav(id)});
+//         console.log("eventlistener addFav")
+//     } else {
+//         save_btn.addEventListener("click", function(){ removeProjectFav(id)});
+//         console.log("eventlistener removeFav")
+//     }
+// }
